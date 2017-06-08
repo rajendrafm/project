@@ -14,9 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('nama','PrakerinController@nama');
-Route::get('minuman','PrakerinController@minuman');
-Route::get('makanan','PrakerinController@makanan');
-Route::get('tahun','PrakerinController@tahun');
-Route::get('bulan','PrakerinController@bulan');
-Route::get('/{a}','PrakerinController@param');
+
+Route::get('coba','CobaController@tesdt');
+Route::get('coba2/{id}','CobaController@test2');
+Route::get('test','CobaController@test3');
+Route::get('test2','CobaController@percobaan');
+Route::get('prakerin/{data}','CobaController@test');
+
