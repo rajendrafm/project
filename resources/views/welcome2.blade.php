@@ -81,7 +81,7 @@
                 <div class="title m-b-md">
                     Laravel
                     Halaman
-                    Rajendra
+                    {{$a}}
                 </div>
 
                 <div class="links">

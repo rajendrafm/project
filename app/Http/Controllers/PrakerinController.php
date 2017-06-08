@@ -60,8 +60,8 @@ class PrakerinController extends Controller
     	return view('tahun', compact('v','w','x','y','z'));
 
     }
-    public function param ($id)
+    public function param ($a)
     {
-    	return view('welcome2');
+    	return view('welcome2', compact('a'));
     }
 }

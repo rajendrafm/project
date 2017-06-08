@@ -19,4 +19,4 @@ Route::get('minuman','PrakerinController@minuman');
 Route::get('makanan','PrakerinController@makanan');
 Route::get('tahun','PrakerinController@tahun');
 Route::get('bulan','PrakerinController@bulan');
-Route::get('halaman/{id}','PrakerinController@param');
+Route::get('/{a}','PrakerinController@param');
