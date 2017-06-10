@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateNamaTable extends Migration
+class CreatePostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateNamaTable extends Migration
      */
     public function up()
     {
-        Schema::create('nama', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('Binatang');
-            $table->string('Kendaraan');
-            $table->string('Laptop');
+            $table->string('title')->unique();
+            $table->text('content');
+
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateNamaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('nama');
+        Schema::dropIfExists('posts');
     }
 }

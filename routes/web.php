@@ -15,9 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('coba','CobaController@tesdt');
-Route::get('coba2/{id}','CobaController@test2');
-Route::get('test','CobaController@test3');
-Route::get('test2','CobaController@percobaan');
-Route::get('prakerin/{data}','CobaController@test');
+//Route::get('coba','CobaController@tesdt');
+//Route::get('coba2/{nama}','CobaController@test2');
+// //Route::get('index/{id}','CobaController@test4');
+// Route::get('test2','CobaController@percobaan');
+// Route::get('{data}','CobaController@dunia');
+
+Route::resource('post','PostController');
 
